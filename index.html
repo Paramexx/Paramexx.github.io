@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	<title>Webstie latihan 1</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+	<script type="text/javascript">	
+		function ShowPage(page){
+		var Div=document.getElementById('halaman');
+			var html='';
+			if(page==1)
+			{
+				html+='<div class="font"><p>REVIEW GADGET DULU BOS</p></div><div class="gambar"><img src="black-shark-2.jpg" width="300px" height="300px" onClick="ShowPage(2);"><p>KLIK GAMBAR GADGET >>></p></div>';
+				html+='<div class="uraian"><p>Seperti yang kita tahu bahwa jenis gadget itu sangat banyak. Masing-masing jenis tersebut juga memiliki kelebihan dan kekurangannya sendiri-sendiri. Untuk mendapatkan gadget yang sesuai kebutuhan kita, tentunya kita harus tahu dong kelebihan dan kekurangan dari jenis gadget tersebut. Lalu dari mana kita bisa mengetahuinya? <b>Tenang Bos!</b> Disini kami akan menampilkan gadget beserta reviewnya yang dapat menambah wawasan Anda.</div>';
+			}
+			else
+			{
+
+				html+='<div class="font"><p>REVIEW BLACK SHARK 3<sup> PRO</sup></p></div><div class="gambar"><video  width="720" height="360" controls><Source src="black-shark.mp4" type="video/mp4"></video></div><br><br><div class="spesifik"><p>SPESIFIKASI & HARGA</p></div>';
+				html+='<div class="bottom"><p><b>OS</b> : Android 10, ROG UI</p><p><b>Chipset</b> : Qualcomm SM8250 Snapdragon 865+ (7 nm+)</p><p><b>CPU</b> : Octa-core (1x3.1 GHz Kryo 585 & 3x2.42 GHz Kryo 585 & 4x1.8 GHz Kryo 585)</p><p><b>GPU</b> : Adreno 650</p><p><b>RAM</b> : 8GB, 12GB</p><p><b>Internal Memori</b> : 128 GB, 256 GB<p><p><b>Layar</b> : 6.59 inci, 1080 x 2340 piksel, 19,5:9 ratio</p><p><b>Kamera Utama</b> : 64 MP, f/1.8 + 13MP, f/2.4 + 5 MP, f/2.0</p><p><b>Kamera Depan</b> : 24 MP, f/2.0</p><p><b>Baterai</b> : 6.000 mAh</p><p><b>Konektivitas</b> : USB Type-C, Wi-Fi 802.11, Bluetooth 5.1</p><p><b>Jaringan</b> : Dual SIM (Nano-SIM, dual stand-by)</p><p><b>Dimensi</b> : 171 x 78 x 9.9 mm</p><p><b>Berat</b> : 240 g</p><p><b>Warna</b> : Black Glare</p><br><br><br><p>Asus ROG Phone 3 meluncur dalam dua varian RAM dan Memori Internal. Untuk RAM 8 GB dan Memori Internal 128 GB dijual <b>Rp.10 jutaan</b>. Sedangkan RAM 12 GB dan Memori internal 256 GB dijual <b>Rp.15 jutaan</b>.</div>';
+			}
+			Div.innerHTML =html;
+		}
+	</script>
+
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			font-family: sans-serif;
+		}
+		a{
+			color:inherit;
+			text-decoration: none;
+		}
+		.option{
+			padding: 20px 0;
+			background: linear-gradient(to right, #F1220A, #098FDC);
+		}
+		.option ul li{
+			display: inline-block;
+			color: #fff;
+			margin-right:30px;
+			font-size:20px;
+		}
+		.container{
+			width: 80%;
+			margin:0 auto;
+		}
+		.font{
+			text-align: right;
+			margin-top: 35px;
+			margin-right: 80px;
+			font-size: 28px;
+			font-weight:bold;
+			color:#098FDC;
+		}
+		.gambar{
+			text-align: center;
+			margin-top: 30px;
+			margin-bottom: 25px;
+			color:#F1220A;
+			font-weight:bold;
+		}
+		.uraian{
+			padding: 25px 65px;
+			text-align: justify;
+			color:#098FDC;
+			border: 1px solid;
+		}
+		.spesifik{
+			text-align: center;
+			margin-top: 30px;
+			margin-bottom: 55px;
+			color:#F1220A;
+			font-weight:bold;
+			font-size: 25px;
+		}
+		.bottom{
+			padding: 0 50vh;
+			margin-bottom: 25px;
+			color:#098FDC;
+		}
+
+
+	</style>
+
+</head>
+<body onLoad="ShowPage(1);">
+
+<div class="option">
+	<div class="container">
+		<ul>
+			<li><a href ="#"><i class="fas fa-home"></i> HOME</a></li>
+			<li><a href ="#"><i class="fas fa-search"></i> SEARCH</a></li>
+			<li><a href ="#"><i class="far fa-envelope"></i> ABOUT</a></li>
+			<li><a href ="#"><i class="fas fa-user"></i></a> LOGIN</li>
+		</ul>
+	</div>
+</div>
+	<div id="halaman"></div>
+</body>
+</html>
